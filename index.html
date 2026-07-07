@@ -1,0 +1,251 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Optimiza tu día con la app de tiempo definitiva. Organiza tus rutinas con alarmas, cronómetro, temporizador y sigue cualquier zona horaria con el reloj mundial.">
+    <meta name="author" content="Sebastián Landaeta">
+    <meta property="og:title" content="FULL-TIME - App de tiempo">
+    <meta property="og:description"
+        content="Optimiza tu día con la app de tiempo definitiva. Alarmas, cronómetro, temporizador y reloj mundial en un solo lugar.">
+    <meta property="og:type" content="website">
+    <!--Hojas de estilos-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reloj.css">
+    <link rel="stylesheet" href="./css/temporizador.css">
+    <link rel="stylesheet" href="./css/cronometro.css">
+    <link rel="stylesheet" href="./css/alarma.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Staatliches&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Black+Ops+One&family=Cabin:ital,wght@0,400..700;1,400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Staatliches&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Full Time</title>
+</head>
+
+<body>
+    <!--Barra de navegación fijada debajo.-->
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="list-items">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-clock-icon lucide-clock">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v6l4 2" />
+                    </svg>
+                    <span>Reloj</span>
+                </li>
+                <li class="list-items">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-hourglass-icon lucide-hourglass">
+                        <path d="M5 22h14" />
+                        <path d="M5 2h14" />
+                        <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+                        <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+                    </svg>
+                    <span>Temporizador</span>
+                </li>
+                <li class="list-items">
+                    <svg class="icon icon-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-timer-icon lucide-timer">
+                        <line x1="10" x2="14" y1="2" y2="2" />
+                        <line x1="12" x2="15" y1="14" y2="11" />
+                        <circle cx="12" cy="14" r="8" />
+                    </svg>
+                    <span>Cronómetro</span>
+                </li>
+                <li class="list-items">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-alarm-clock-icon lucide-alarm-clock">
+                        <circle cx="12" cy="13" r="8" />
+                        <path d="M12 9v4l2 2" />
+                        <path d="M5 3 2 6" />
+                        <path d="m22 6-3-3" />
+                        <path d="M6.38 18.7 4 21" />
+                        <path d="M17.64 18.67 20 21" />
+                    </svg>
+                    <span>Alarma</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Contenedor principal-->
+    <main class="main-content">
+        <section class="main" id="main">
+            <div class="main__header">
+                <p class="main__text">¡Bienvenido!</p>
+                <p>"Gestiona tu tiempo de forma simple y eficiente."</p>
+            </div>
+            <div class="main__container">
+                <div class="main__title">
+                    Full Time
+                </div>
+
+            </div>
+            <div class="main__msg">
+                Puedes ver la hora exacta de cualquier país y ciudad en cualquier continente.
+            </div>
+        </section>
+
+        <!--Section del reloj-->
+        <section class="section-clock" id="clock">
+            <article class="clock__container">
+                <div class="clock__header">
+                    <h1>Reloj Mundial</h1>
+                    <span class="clock__date-local" id="clock-date">Hoy es Sabado, 23 de Julio del 2026</span>
+                </div>
+                <div class="clock__time">
+                    <div class="clock__circle">
+                        <span class="circle__time" id="clock-time">00:00:00 <span class="circle__ap">PM</span></span>
+                    </div>
+                </div>
+                <div class="clock__zone-time">
+                    <p class="zona-time__title">Hora Local</p>
+                    <p class="zona-time__zone" id="zone">Venezuela GTM-004</p>
+                </div>
+            </article>
+            <article class="country-time">
+                <div class="country-time__header">
+                    <h2 class="country-time__title">Horarios Mundiales</h2>
+                </div>
+                <div class="country-time__search-box">
+                    <label for="input-search" class="search-box__label">Buscar País o Zona Horaria</label>
+                    <input id="input-search" type="text" class="search-box__input"
+                        placeholder="Escribe el país que deseas buscar">
+                    <div class="country-time__container-btn">
+                        <button class="country-time__btn" id="btn-search">Buscar</button>
+                    </div>
+                    <datalist id="zonas-horarias"></datalist>
+                </div>
+                <div class="country-time__container">
+                </div>
+            </article>
+        </section>
+
+        <!--Section del Cronómetro-->
+        <section class="size-section slide" id="chronometer">
+            <div class="chronometer-header">
+                <h1>Cronómetro</h1>
+                <span class="header-text">FULL-TIME</span>
+            </div>
+            <article class="circle-time">
+                <div class="timer-text-container">
+                    <span class="time-display" id="time-chronometer">00:00:00</span>
+                    <span class="mlSeconds-display" id="mlSeconds-chronometer">000</span>
+                </div>
+            </article>
+            <div class="container__msj-init">
+                <span class="msj-init">¡Presiona iniciar para comenzar el conteo!</span>
+            </div>
+            <div class="buttons-chronometer">
+                <button class="btn">Iniciar</button>
+                <button class="btn">Pausar</button>
+                <button class="btn">Detener</button>
+            </div>
+        </section>
+
+        <!--Section del Temporizador-->
+        <section class="size-section slide" id="timer">
+            <div>
+                <h1>Temporizador</h1>
+            </div>
+            <article class="circle-time">
+                <div class="container-time">
+                    <span class="time-display" id="time-timer">00:00:00</span>
+                    <p id="time-served">¡Tiempo Cumplido!</p>
+                    <audio id="audio-timer" src="./audio/temporizador.mp3" preload="auto"></audio>
+                </div>
+            </article>
+            <article class="timer-controls">
+                <div class="timer-field">
+                    <label>Horas</label> <br>
+                    <input class="timer-input" id="input-hours" type="number" placeholder="00">
+                    <div>
+                        <button class="btn-controls">-</button>
+                        <button class="btn-controls">+</button>
+                    </div>
+                </div>
+                <div class="timer-field">
+                    <label>Minutos</label><br>
+                    <input class="timer-input" id="input-minutes" type="number" placeholder="00">
+                    <div>
+                        <button class="btn-controls">-</button>
+                        <button class="btn-controls">+</button>
+                    </div>
+                </div>
+                <div class="timer-field">
+                    <label>Segundos</label> <br>
+                    <input class="timer-input" id="input-seconds" type="number" placeholder="00">
+                    <div>
+                        <button class="btn-controls">-</button>
+                        <button class="btn-controls">+</button>
+                    </div>
+                </div>
+            </article>
+            <div class="buttons-timer">
+                <button class="btn" id="btn-iniciar">Iniciar</button>
+                <button class="btn" id="btn-pausar">Pausar</button>
+                <button class="btn" id="btn-detener">Detener</button>
+            </div>
+        </section>
+
+        <!--Section de la alarma-->
+        <section class="section-alarm slide" id="alarm">
+            <div class="alarm__header">
+                <h1 class="alarm__title">Alarma Online</h1>
+                <div class="alarm__current-zone">
+                    <p id="current-time-display">Cargando hora local...</p>
+                    <p id="current-period-display">Cargando zona horaria...</p>
+                </div>
+            </div>
+            <article class="alarm__new-zone">
+                <h2 class="alarm__subtitle">Crea una alarma</h2>
+                <div class="alarm__selectors">
+                    <select class="alarm__select alarm__select--hours"></select>
+                    <select class="alarm__select alarm__select--minutes"></select>
+                    <select class="alarm__select alarm__select--period">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <audio id="audio-alarm" src="./audio/alarma.mp3"></audio>
+                </div>
+                <p id="alarm__error"></p>
+                <div class="alarm__actions">
+                    <button class="alarm__button" id="btn__add-alarm">Añadir</button>
+                </div>
+            </article>
+            <article class="alarm__list-zone">
+                <h2 class="alarm__subtitle">Alarmas programadas</h2>
+                <div class="no-alarms">
+                    <span>No hay alarmas programadas.</span>
+                </div>
+                <div class="alarm__list"></div>
+            </article>
+        </section>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="./js/main.js"></script>
+    <script src="./js/reloj.js"></script>
+    <script src="./js/cronometro.js"></script>
+    <script src="./js/temporizador.js"></script>
+    <script src="./js/alarma.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

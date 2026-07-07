@@ -1,0 +1,66 @@
+#chronometer {
+    display: none;
+    margin-top: 3.8rem;
+}
+
+.chronometer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.msj-init {
+    font-size: 1.1rem;
+}
+
+.buttons-chronometer {
+    width: 230px;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+}
+
+.timer-text-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+}
+
+.mlSeconds-display {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    font-size: 1rem;
+    margin-right: 0.7rem;
+}
+
+.container__msj-init {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .buttons-chronometer {
+        width: 260px;
+        height: 8vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #chronometer {
+        margin-top: 0;
+    }
+}

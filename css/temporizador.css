@@ -1,0 +1,105 @@
+#timer {
+    display: none;
+    margin-top: 3rem;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.timer-field {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.timer-input {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    border: 2px solid rgb(9, 86, 154);
+    text-align: center;
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-start {
+    width: 100px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: rgb(9, 86, 154);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-controls {
+    width: 30px;
+    height: 30px;
+    margin: 5px 3px 3px 0;
+    border-radius: 50%;  
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(9, 86, 154);
+    color: white;
+}
+
+#time-served {
+    margin-top: 8px; 
+    display: none;
+}
+
+.buttons-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    gap: 20px;
+}
+
+#btn-detener {
+    background-color: rgb(9, 86, 154);
+}
+#btn-pausar, #btn-detener {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; appearance: none; }
+
+@media (min-width: 768px) {
+    .timer-field {
+        font-size: 1rem;
+    }
+
+    .timer-input {
+        width: 110px;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+    .btn-start {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .btn-controls {
+        width: 28px;
+        height: 28px;
+        border-radius: 15px;
+        font-size: 1rem;  
+    }
+
+    #timer {
+        margin-top: 0;
+    }
+}

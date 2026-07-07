@@ -1,0 +1,163 @@
+#alarm {
+    display: none;
+}
+
+.section-alarm {
+    min-height: 85vh;
+    margin-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.alarm__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.alarm__new-zone {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: rgb(247, 249, 249);
+}
+
+.alarm__subtitle {
+    font-size: 1.1rem;
+    padding: 15px 0 0 0;
+}
+
+.alarm__selectors {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+.alarm__select {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.alarm__button {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 12px ;
+    background-color: rgb(9, 86, 154);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.alarm__current-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-time-display {
+    margin-bottom: 3px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#period {
+    font-size: 0.8rem;
+}
+
+#alarm__error {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    min-height: 20px;
+    display: none;
+}
+
+.alarm__list-zone {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:rgb(247, 249, 249);
+}
+
+.alarm__list {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.no-alarms {
+    width: 100%;
+    height: 10vh;
+    margin: 0; 
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(22, 57, 79);
+    font-size: 1rem;
+}
+
+.alarm__item {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(233, 231, 231);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.alarm__time-wrapper {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alarm__actions {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.alarm__time {
+    font-size: 1.3rem;
+}
+
+.alarm__button--delete {
+    cursor: pointer;
+    margin: 0;
+}
+
+.alarm__button--stop {
+    background-color: rgb(194, 25, 25);
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .alarm__new-zone, .alarm__list-zone {
+        width: 400px;
+    }
+}

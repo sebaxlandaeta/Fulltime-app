@@ -1,0 +1,199 @@
+.section-clock {
+    min-height: 87vh;
+    display: none;
+}
+
+.clock__container {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 20px;
+}
+
+.clock__header {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    padding: 1rem;
+}
+
+.clock__time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock__date-local {
+    font-size: 1.1rem;
+}
+
+.clock__circle {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    gap: 10px;
+    border: 8px double rgb(33, 104, 165);
+    background-color: rgb(247, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle__time {
+    font-size: 1.8rem;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.clock__zone-time {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.zona-time__title  {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.zona-time__zone {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.country-time {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.country-time__title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.country-time__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.country-time__card {
+    height: 160px;
+    border-radius: 20px;
+    padding: 20px  ;
+    text-align: center;
+    box-shadow: 1px 2px 10px  rgb(66, 81, 104);
+    color: rgb(155, 155, 155);
+    border: 1px solid #02488a;
+    background-color: #f5f5f5; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card__title {
+    font-size: 1.3rem;
+    color: #020101;
+}
+
+.card__time {
+    font-size: 1.3rem;
+    color: #09569A;
+    font-family: "Black Ops One", system-ui;
+}
+
+.card__date {
+    font-size: 0.9rem;
+    color:  #0f0b0b;
+    font-weight: bold;
+}
+
+.card__gtm-zone {
+    margin-top: 3px;
+    color:  #040202;;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.country-time__search-box {
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    padding: 0 15px;
+}
+
+.search-box__label {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #190909;
+    margin-bottom: 15px;
+}
+
+.search-box__input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.country-time__container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.country-time__btn {
+    width: 100px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e68ad;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.search-box__input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+@media (min-width: 768px) {
+    .section-clock {
+      min-height: 85vh;
+    }
+
+    .clock__container {
+        height: 85vh; 
+        justify-content: center; 
+    }
+
+    .clock__header {
+        margin-top: 0;
+    }
+}

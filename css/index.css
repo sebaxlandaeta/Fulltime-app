@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    height: 11vh;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 86, 154);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.list-items {
+    cursor: pointer;
+    border-bottom: 3px solid rgb(9, 86, 154);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 7px;
+    margin-top: 5px;
+    &:hover {
+        font-weight: 600;
+    }
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+}
+.main-content {
+    width: 100%;
+    min-height: 87vh;
+    margin-bottom: 13vh;
+}
+
+.main {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    margin-top: 3rem;
+}
+
+.main__header {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.main__container {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    & + p {
+        font-size: 1.2rem;
+    }
+}
+
+.main__title {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: rgb(247, 249, 249);
+    color: rgb(18, 90, 149);
+    border: 8px double rgb(18, 90, 149);
+    font-family: "Black Ops One", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    animation: pulsar 2s ease-in-out infinite;
+}
+
+.main__msg {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 20px;
+    animation: rebotar 1.5s ease-in-out infinite;
+}
+
+.size-section {
+    height: 87vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.circle-time {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: 7px double rgb(9, 86, 154);
+    background-color: rgb(247, 249, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-time {
+    width: 170px;
+    height: 45px;
+    text-align: center;
+    position: relative;
+    margin-top: 0.9rem;
+}
+
+.time-display {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: rgb(9, 86, 154);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(191, 190, 190);
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .icon-2 {
+        width: 26px;
+        height: 26px;
+    }
+    .main-header {
+        height: 10vh;
+        bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+    }
+        
+    .main-content {
+        width: 100%;
+        min-height: 85vh;
+        margin-bottom: 15vh;
+    }
+
+    .size-section {
+        height: 85vh;
+        justify-content: center;
+    }
+
+    .main {
+        height: 85vh; 
+        justify-content: center;    
+        margin-top: 0;
+    }
+    
+    .main__header {
+        height: 25vh;
+    }
+
+    .main__container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .main__msg {
+        height: 20vh;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0 8px;
+    }
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.10);
+    }
+}
+
